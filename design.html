@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Society Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="description" content="">
+    <meta name="author" content="">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+    $("#mmenu").hide();
+    $(".mtoggle").click(function() {
+        $("#mmenu").slideToggle(500);
+    });
+});
+</script>
+  </head>
+
+  <body>
+  <div id="wrapper">
+  	<div id="intmenu ">
+    	<div id="logo"><img src="img/logo.png" width="325" height="100" alt=""/></div>
+    	<div id="menulist">
+        	<nav id="mobile">
+	        <a class="mtoggle" id="menuicon" href="#"><img src="img/menu.png" width="28" height="20" alt=""/></a>
+    		<ul id="mmenu">
+        		<li><a href="#">Home</a></li>
+    		    <li><a href="#">Products</a></li>
+		        <li><a href="#">About</a></li>
+        		<li><a href="#">Contact</a></li>       	
+		    </ul>
+			</nav>
+        </div>
+		<div id="searchbar"><div id="txtbox"><input type="text" id="searchbartxt"></div><img id="searchbarimg" src="img/search.png" width="34" height="30" alt=""/></div>        
+    </div>
+  
+
+  
+  </div>
+
+  </body>
+</html>
