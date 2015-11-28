@@ -10,8 +10,7 @@
 
 html, body {
 	height:100%;
-	width:460px;
-	max-width:460px;
+	width:100%;
 	width:auto;
 }
 
@@ -23,19 +22,19 @@ body {
 }
  
  #wrapper {
-	 min-width:460px;
-	 max-width:460px;
-	 margin-left:auto;
-	 margin-right:auto;
+	 min-width:100%;
+	 max-width:100%;
+	 
  }
- #intmenu  {
-	 width: 460px;
+ #top {
+	 width: 100%;
+	 background-image:url(../img/topbg.png);
+	 background-position:top;
+	 background-repeat:repeat-x;
+	 min-height:100px;
+	 	 position:absolute;
  }
  #logo {
-	 max-width:134px;
-	 height:100px;
-	 max-height:100px;
-	 width:134px;
 	 position:relative;
 	 float:left;
 	  z-index:7000;
@@ -43,14 +42,11 @@ body {
  #menulist {
 	 position: relative;	
 	 float:left;
-	 max-width:315px;
+
 	 
 	 height:100px;
 	 max-height:100px;
-	 width:315px;
-	 background-image:url(../img/topbg.png);
-	 background-repeat:repeat-x;
-	 background-position:top;
+	 width:100%;
 
 	 
  }
@@ -61,6 +57,19 @@ body {
 	 right:0;
 	 height:32px;
 	 width:32px;
+	 vertical-align:central;
+	 z-index:9999;
+	 
+	 
+	 
+	 
+ }
+ #menuicon2 {
+	 margin:3px;
+	 position: absolute;
+	 right:0;
+	 bottom:0px;
+	 margin-right:25px;
 	 vertical-align:central;
 	 z-index:9999;
 	 
@@ -142,11 +151,49 @@ nav#mobile {
 		margin-right:1px;
 		float: right;
 		
+		
 	}
 	#txtbox {
+		height:50px;
+		
 		
 		
 	}
 	#searchbartxt {
+		height:28px;
+		border:0px;
+		background-color:transparent;
+		text-transform: capitalize;
+		text-align:right;
+		padding-right:3px;
+		width: 250px;
+		color:#FFFFFF;
+		position:relative;
+		float:right;
 		
+	}
+	#footer {
+		
+		position:absolute;
+		bottom:0;
+		background-color:rgba(0,0,0,1.00);
+		height:50px;
+		width:460px;
+		display: block;
+		z-index:8000;
+	}
+	#footerline {
+		background-image: url(../img/line.png);
+		background-repeat:repeat-x;
+		width: 460px;
+		height:8px;
+		max-height:8px;
+		position:relative;
+		top:0;
+		}
+	#copywrite {
+		font-size:10px;
+		margin-left:auto;
+		margin-right:auto;
+		text-align:center;	
 	}
