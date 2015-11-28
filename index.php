@@ -1,10 +1,18 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-</head>
+<?php
+include('inc/config.php');
+include('inc/mysql.php');
+include('inc/functions.php');
+?>
 
-<body>
-</body>
-</html>
+<?php
+include('template/header.php');
+
+?>
+
+<?php
+include('template/footer.php');
+?>
+
+<?php
+
+?>
